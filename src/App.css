@@ -1,0 +1,874 @@
+/* All app styling */
+
+.App {
+}
+
+body{
+  overflow: hidden;
+}
+
+.Opaque{
+  opacity: 1;
+}
+
+.Transparent{
+  opacity: 0;
+}
+
+/* Street page styling */
+
+.street{
+  width: 100%;
+  height: 100%;
+}
+
+.StreetBackground{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./Images/cartoon\ street.jpg");
+  background-size: cover;
+  z-index: -2;
+}
+
+.RainWrapper{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background:none;
+  filter: none;
+}
+
+/* rain drop styles */
+
+.drop {
+	width:1px;
+	height:89px;
+	position: absolute;
+	bottom:200px;
+	-webkit-animation: fall .63s linear infinite;
+  -moz-animation: fall .63s linear infinite;
+  background-color: white;
+}
+
+/* drop animation styles */
+@-webkit-keyframes fall {
+	to {margin-top:900px;}
+}
+@-moz-keyframes fall {
+	to {margin-top:900px;}
+}
+
+@keyframes fall {
+  to {margin-top:900px;}
+}
+
+/* End of rain styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+.IntroText{
+  background-color: white;
+  margin: 10vh;
+  color: navy;
+  font-family: 'alkatra', cursive;
+  border-style: solid;
+  border-width: 2px;
+  border-color: navy;
+  padding: 1vh;
+  animation-name: Fade;
+  animation-duration: 5s;
+  position: static;
+  text-align: center;
+}
+
+.NeonText{
+  background-color: white;
+  margin: 5vh;
+  color: navy;
+  font-family: 'alkatra', cursive;
+  border-style: solid;
+  border-width: 2px;
+  border-color: navy;
+  padding: 1vh;
+  position: relative;
+  left: 0;
+}
+
+@keyframes Fade{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.WhatNameBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: Fade;
+  animation-duration: 8s;
+}
+
+.WhatName{
+  background-color: white;
+  justify-content: center;
+  color: rgb(167, 49, 126);
+  font-family: 'alkatra', cursive;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(167, 49, 126);
+  padding: 2vh;
+  text-align: center;
+}
+
+.EnterBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: Fade;
+  animation-duration: 8s;
+}
+
+#NameBox{
+  text-align: center;
+  margin: 1vh;
+  padding: 1vh;
+  align-items: center;
+}
+
+#handleSaveName{
+  text-align: center;
+  margin: 1vh;
+  padding: 1vh;
+}
+
+.btn{
+  text-align: center;
+  margin: 1vh;
+  padding: 1vh;
+}
+
+.glow {
+  font-size: 6vh;
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  width: 70vh;
+  margin-left: 10vh;
+  -webkit-animation: glow 0.3s ease-in-out infinite alternate;
+  -moz-animation: glow 0.3s ease-in-out infinite alternate;
+  animation: glow 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #880044, 0 0 20px #e60073, 0 0 25px #8c0247, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 4px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+  }
+}
+
+#NeonBox{
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh;
+}
+
+.LinkBox{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+  bottom: 3vh;
+  right: 30vh;
+}
+
+#Building1Link{
+  color: rgb(245, 255, 132);
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(0, 0, 1);
+  text-decoration: none;
+  padding: 1vh;
+  border: yellow;
+  border-style: solid;
+}
+
+.MaddyLink{
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway', sans-serif;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1vh;
+  font-size: 2.5vh;
+}
+
+.ImageRights{
+  color: rgb(28, 10, 64);
+  font-family: 'Raleway', sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 1vh;
+}
+
+/* Building 1 styling */
+
+.build1-dark{
+  background-image: url("./Images/bd1-dark.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.build1-light{
+  background-image: url("./Images/bd1.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bd1Text{
+  background-color: white;
+  margin: 10vh;
+  color: navy;
+  font-family: 'alkatra', cursive;
+  border-style: solid;
+  border-width: 2px;
+  border-color: navy;
+  padding: 1vh;
+  animation-name: Fade;
+  animation-duration: 5s;
+  position: static;
+  z-index: 6;
+}
+
+.LookBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 5vh;
+  right: 2vh;
+  left: 2vh;
+  z-index: 6;
+}
+
+.Look{
+  background-color: white;
+  justify-content: center;
+  color: rgb(167, 49, 126);
+  font-family: 'alkatra', cursive;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(167, 49, 126);
+  padding: 2vh;
+  text-align: center;
+  z-index: 6;
+}
+
+.SecretBox-Chair{
+  background-color: none;
+  position: fixed;
+  padding: 14vh;
+  right: 22%;
+  top: 43%;
+  width: 2%;
+  height: 11%;
+  z-index: 5;
+}
+
+.SecretBox-Lamp{
+  background-color: none;
+  position: fixed;
+  padding: 8vh;
+  right: 40%;
+  bottom: 16%;
+  height: 30%;
+  width: 2%;
+  z-index: 5;
+}
+
+.SecretBox-Mirror{
+  background-color: none;
+  position: fixed;
+  padding: 11vh;
+  left: 21%;
+  bottom: 14%;
+  height: 22%;
+  width: 2%;
+  z-index: 5;
+}
+
+.SecretBox-Wadrobe{
+  background-color: none;
+  position: fixed;
+  padding: 13vh;
+  left: 7%;
+  bottom: 13%;
+  height: 35%;
+  z-index: 5;
+}
+
+.SecretBox-Guitar{
+  background-color: none;
+  position: fixed;
+  padding: 2vh;
+  left: 0%;
+  bottom: 15%;
+  width: 8vh;
+  height: 45%;
+  z-index: 5;
+}
+
+.SecretBox-Boxes{
+  background-color: none;
+  position: fixed;
+  padding: 12vh;
+  right: 3%;
+  bottom: 6%;
+  width: 6%;
+  height: 30%;
+  z-index: 5;
+}
+
+.SecretBox-Bottles{
+  background-color: none;
+  position: fixed;
+  padding: 6vh;
+  right: 32%;
+  top: 26%;
+  width: 8%;
+  z-index: 5;
+}
+
+.ChairText{
+  background-color: white;
+  color: rgb(125, 23, 62);
+  font-family: 'alkatra', cursive;
+  font-size: small;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(125, 23, 62);;
+  padding: 0.5vh;
+  position: fixed;
+  bottom: 26vh;
+  right: 25vh;
+  width: 35vh;
+  z-index: 4;
+}
+
+.LampText{
+  background-color: white;
+  color: rgb(125, 23, 62);
+  font-family: 'alkatra', cursive;
+  font-size: small;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(125, 23, 62);;
+  padding: 0.5vh;
+  position: fixed;
+  top: 60vh;
+  left: 73vh;
+  width: 30vh;
+  z-index: 4;
+}
+
+.MirrorText{
+  background-color: white;
+  color: rgb(125, 23, 62);
+  font-family: 'alkatra', cursive;
+  font-size: small;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(125, 23, 62);;
+  padding: 0.5vh;
+  position: fixed;
+  top: 40vh;
+  left: 40vh;
+  width: 42vh;
+  z-index: 4;
+}
+
+.WadrobeText{
+  background-color: white;
+  color: rgb(125, 23, 62);
+  font-family: 'alkatra', cursive;
+  font-size: small;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(125, 23, 62);;
+  padding: 0.5vh;
+  position: fixed;
+  top: 22vh;
+  left: 10vh;
+  width: 40vh;
+  z-index: 4;
+}
+
+.GuitarText{
+  background-color: white;
+  color: rgb(125, 23, 62);
+  font-family: 'alkatra', cursive;
+  font-size: small;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(125, 23, 62);;
+  padding: 0.5vh;
+  position: fixed;
+  top: 62vh;
+  left: 2vh;
+  width: 20vh;
+  z-index: 4;
+}
+
+.BoxesText{
+  background-color: white;
+  color: rgb(125, 23, 62);
+  font-family: 'alkatra', cursive;
+  font-size: small;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(125, 23, 62);;
+  padding: 0.5vh;
+  position: fixed;
+  top: 22vh;
+  right: 2vh;
+  width: 20vh;
+  z-index: 4;
+}
+
+.BottlesText{
+  background-color: white;
+  color: rgb(125, 23, 62);
+  font-family: 'alkatra', cursive;
+  font-size: small;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(125, 23, 62);;
+  padding: 0.5vh;
+  position: fixed;
+  top: 23vh;
+  right: 45vh;
+  width: 40vh;
+  z-index: 3;
+}
+
+.OpenButton{
+  background-color: black;
+  text-align: center;
+  color: rgb(224, 209, 0);
+  font-family: 'alkatra', cursive;
+  font-size: medium;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(224, 209, 0);
+  padding: 0.5vh;
+  position: fixed;
+  bottom: 9vh;
+  left: 4vh;
+  width: 15vh;
+  z-index: 7;
+}
+
+.Popup{
+  background-color: none;
+  text-align: center;
+  color: rgb(224, 209, 0);
+  font-family: 'alkatra', cursive;
+  font-size: medium;
+  padding: 0.5vh;
+  position: fixed;
+  bottom: 25%;
+  left: 37%;
+  height: 40vh;
+  width: 60vh;
+  background-image: url("./Images/Wand.png");
+  background-size: 99%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.PopupVanish{
+  background-color: none;
+  background-image: none;
+  opacity: 0;
+  z-index: 2;
+}
+
+.Final{
+  background-color: black;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'alkatra', cursive;
+  font-size: medium;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(224, 209, 0);
+  padding: 0.5vh;
+  position: fixed;
+  bottom: 40vh;
+  left: 60vh;
+  width: 45vh;
+  opacity: 1;
+  z-index: 1;
+  animation-name: Fade;
+  animation-duration: 5s;
+}
+
+.FinalHidden{
+  background-color: black;
+  text-align: center;
+  color: rgb(224, 209, 0);
+  font-family: 'alkatra', cursive;
+  font-size: medium;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(224, 209, 0);
+  padding: 0.5vh;
+  position: fixed;
+  bottom: 9vh;
+  left: 40vh;
+  width: 15vh;
+  opacity: 0;
+  z-index: 1;
+}
+
+#Building2Link{
+  color: rgb(255, 255, 0);
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* Building 2 styling */
+
+.build2{
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("./Images/bd2.jpg");
+  background-size: cover;
+}
+
+#LibraryIntro{
+  background-color: white;
+  color: navy;
+  font-family: 'alkatra', cursive;
+  border-style: solid;
+  border-width: 2px;
+  border-color: navy;
+  padding: 1vh;
+  text-align: center;
+  font-size: medium;
+  position: fixed;
+  bottom: 9vh;
+  left: 20vh;
+  width: 65vh;
+  opacity: 1;
+  z-index: 3;
+  animation-name: Fade;
+  animation-duration: 5s;
+}
+
+#BookBox{
+  background-color: none;
+  text-align: center;
+  font-family: 'alkatra', cursive;
+  font-size: medium;
+  padding: 0.5vh;
+  position: fixed;
+  top: 40vh;
+  right: 44vh;
+  height: 3vh;
+  width: 19vh;
+  background-image: url("./Images/MagicBook.png");
+  background-size: 99%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+#PaperBox{
+  position: fixed;
+  bottom: 5vh;
+  right: 60vh;
+  height: 85vh;
+  width: 60vh;
+  background-image: url("./Images/paper.jpg");
+  background-size: 99%;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+
+#ExitBtn{
+  position: fixed;
+  top: 10vh;
+  right: 61vh;
+  height: 10vh;
+  width: 10vh;
+  background-image: url("./Images/Exit.png");
+  background-size: 99%;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+#OpenBtn{
+  position: fixed;
+  bottom: 10vh;
+  right: 10vh;
+  height: 10vh;
+  width: 10vh;
+  background-image: url("./Images/OpenBtn.png");
+  background-size: 99%;
+  background-repeat: no-repeat;
+  z-index: 3;
+  background-color: none;
+}
+
+#Page{
+  background-color: black;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'alkatra', cursive;
+  font-size: medium;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(224, 209, 0);
+  padding: 0.5vh;
+  position: fixed;
+  bottom: 40%;
+  left: 38%;
+  width: 40vh;
+  z-index: 1;
+}
+
+#Building3Link{
+  color: rgb(251, 255, 0);
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.Black{
+  height: 100vh;
+  overflow: hidden;
+  background-image: none;
+  background-size: cover;
+  background-color: black;
+}
+
+/* Building 3 styling */
+
+.build3{
+  height: 100vh;
+  background-image: url("./Images/bd3.jpg");
+  background-size: cover;
+}
+
+#Potions{
+  background-color: white;
+  color: navy;
+  font-family: 'alkatra', cursive;
+  border-style: solid;
+  border-width: 2px;
+  border-color: navy;
+  padding: 1vh;
+  text-align: center;
+  font-size: medium;
+  position: fixed;
+  top: 16%;
+  left: 10%;
+  width: 65vh;
+  text-align: center;
+  opacity: 1;
+  z-index: 3;
+  animation-name: Fade;
+  animation-duration: 4s;
+}
+
+#Forms{
+  position: fixed;
+  top: 10vh;
+}
+
+.FlexForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 18%;
+  right: 9%;
+}
+
+.Input{
+  color: white;
+  font-family: 'alkatra', cursive;
+  font-size: medium;
+}
+
+#AddIngredients{
+  background-color: black;
+  text-align: center;
+  color: rgb(224, 209, 0);
+  font-family: 'alkatra', cursive;
+  font-size: medium;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(224, 209, 0);
+  padding: 0.5vh;
+  margin: 2vh;
+  z-index: 7;
+}
+
+.Outcomes{
+  background-color: black;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'alkatra', cursive;
+  font-size: medium;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(224, 209, 0);
+  padding: 0.5vh;
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
+  width: 40%;
+  z-index: 5;
+}
+
+#Building3bLink{
+  color: rgb(251, 255, 0);
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* Building 3b styling */
+
+.build3b{
+  height: 100vh;
+  background-image: url("./Images/bd3.jpg");
+  background-size: cover;
+}
+
+.WandMove{
+  position: absolute;
+  top: 2vh;
+  left: 40vh;
+  width:300px;
+  height:50px;
+  border-radius:50%;
+  background-image: url("./Images/WandSpin.png");
+  background-size: 99%;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  filter: brightness(150%);
+  }
+  
+  .WandMove-container {
+  position: absolute;
+  top: 50vh;
+  left: 50vh;
+  width: 500px;
+  height: 100px;
+  animation: orbit 6s linear 1;
+  animation-delay: 4s;
+  }
+  
+  @keyframes orbit {
+  from { transform:rotate(0deg) translateX(200px) rotate(0deg); }
+  to { transform:rotate(360deg) translateX(200px) rotate(-360deg); }
+  }
+
+  #PotionsIntro{
+    background-color: white;
+    color: navy;
+    font-family: 'alkatra', cursive;
+    border-style: solid;
+    border-width: 2px;
+    border-color: navy;
+    padding: 1vh;
+    text-align: center;
+    font-size: medium;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 65vh;
+    text-align: center;
+    opacity: 1;
+    z-index: 3;
+    animation-name: Fade;
+    animation-duration: 3s;
+  }
+
+  #Finale{
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'alkatra', cursive;
+    font-size: medium;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(224, 209, 0);
+    padding: 2vh;
+    position: fixed;
+    top: 27%;
+    left: 34%;
+    width: 30%;
+    z-index: 5;
+    animation-name: appear;
+    animation-delay: 10s;
+  }
+
+  @keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  
+  #End{
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'alkatra', cursive;
+    font-size: medium;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(224, 209, 0);
+    padding: 2vh;
+    position: fixed;
+    top: 45%;
+    left: 34%;
+    width: 30%;
+    z-index: 5;
+  }
+
+  #TheEnd{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'alkatra', cursive;
+    font-size: xx-large;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(224, 0, 202);
+    padding: 0.5vh;
+    position: fixed;
+    bottom: 10%;
+    left: 35%;
+    width: 30%;
+    z-index: 5;
+  }
+
+  #StartOver{
+    color: white;
+    text-decoration: none;
+  }
