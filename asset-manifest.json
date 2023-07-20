@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7dc89000.css",
+    "main.js": "/static/js/main.0f61cfac.js",
+    "static/js/512.481220a5.chunk.js": "/static/js/512.481220a5.chunk.js",
+    "static/media/thunderSound.mp3": "/static/media/thunderSound.25f335c0d3ead5d54cf3.mp3",
+    "static/media/bd2.jpg": "/static/media/bd2.fc8f85e37e0fd479baa4.jpg",
+    "static/media/cartoon street.jpg": "/static/media/cartoon street.9ba2ac44ae1c4dc76bd4.jpg",
+    "static/media/bd1.jpg": "/static/media/bd1.4a8935d11108ad3f61f4.jpg",
+    "static/media/bd3.jpg": "/static/media/bd3.5adc69a1600ab371cad1.jpg",
+    "static/media/bd1-dark.jpg": "/static/media/bd1-dark.93de2798f47b41caf665.jpg",
+    "static/media/MagicBook.png": "/static/media/MagicBook.8ff0500b9abbdfa2eee5.png",
+    "static/media/paper.jpg": "/static/media/paper.c307c55f7a992a569789.jpg",
+    "static/media/Wand.png": "/static/media/Wand.09ecd3711cff52322265.png",
+    "static/media/OpenBtn.png": "/static/media/OpenBtn.881283a93fbcfb9327a2.png",
+    "static/media/WandSpin.png": "/static/media/WandSpin.ae456c89189a91274d58.png",
+    "static/media/Exit.png": "/static/media/Exit.abef7560d325bb38405f.png",
+    "index.html": "/index.html",
+    "main.7dc89000.css.map": "/static/css/main.7dc89000.css.map",
+    "main.0f61cfac.js.map": "/static/js/main.0f61cfac.js.map",
+    "512.481220a5.chunk.js.map": "/static/js/512.481220a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7dc89000.css",
+    "static/js/main.0f61cfac.js"
+  ]
+}
